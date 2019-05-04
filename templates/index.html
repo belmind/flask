@@ -16,8 +16,19 @@
         <h1>Hello!</h1> <h2>I'm Belmin and I'm learning flask.</h2>
         <h3>This website is powered by <a href="http://flask.pocoo.org/docs/1.0/" target="_new">flask.</a></h3>
         <p>Click<a class="nodeco" href="/404"> here</a> for a hard 404.</p>
-        <p><br><b>Enter '/api/yourstringthere' in the url to see whats stored in the REST API</b></p>
-        </div>
+        <br>
+        <div class="line"></div>
+        <h2 id="api">My REST API</h2>
+        <p>View data: </p>
+        <p><b>Enter '/api/yourstringthere' in the url to see whats stored in the REST API</b></p>
+        <br>
+        <p>Enter data: </p>
+        <div class ="code">
+          <p>$ curl https://flask-bd.herokuapp.com/api/[string] -d "data=your_value_here" -X PUT</p>
+        </div>  
+      </div>
+      <br>
+      <a class="nodeco" href="/api/belmin"><div class="mybtn">Example</div></a>
       </div> <!-- Wrapper -->
     </div>
   </body>
