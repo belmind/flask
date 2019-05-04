@@ -25,7 +25,7 @@ def not_found(error):
 with app.test_request_context():
     url_for('static', filename='style.css')
 
-api.add_resource(TodoSimple, '/<string:todo_id>')
+api.add_resource(TodoSimple, '/api/<string:todo_id>')
 
 if __name__ == '__main__':
     app.run(debug=True) 
