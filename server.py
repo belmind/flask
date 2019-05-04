@@ -18,6 +18,10 @@ class TodoSimple(Resource):
 def index():
     return render_template('index.html')
 
+@app.route('/404')
+def not_found(error):
+    return render_template('error.html'), 404
+
 @app.errorhandler(404)
 def not_found(error):
     return render_template('error.html'), 404
